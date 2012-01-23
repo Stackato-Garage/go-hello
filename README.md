@@ -1,4 +1,4 @@
-# Hello World in G
+# Hello World in Go
 
 This app demonstrates Stackato's "Generic framework" by deploying an application of custom framework and runtime ... in this case, the Go programming language from Google.
 
