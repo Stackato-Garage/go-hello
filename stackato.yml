@@ -8,12 +8,15 @@ processes:
 
 # Install Go: https://wiki.ubuntu.com/Go
 # golang-stable takes ~30M of download size
+requirements:
+  staging:
+    ubuntu:
+      - ["ppa:gophers/go"]
+      - golang-stable
+
 hooks:
-  pre-staging:
-    - "sudo add-apt-repository ppa:gophers/go"
-    - "sudo apt-get update"
-    - "sudo apt-get -y install golang-stable"
+  pre-staging: make hello
 
 min_version:
   client: 0.3.14.0.22
-#  server: 0.8.4
+  server: 0.9.0.143
