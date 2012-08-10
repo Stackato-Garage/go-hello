@@ -2,7 +2,7 @@
 
 This app demonstrates Stackato's "Generic framework" by deploying an application of custom framework and runtime ... in this case, the Go programming language from Google.
 
-## Pusing to Stackato
+## Pushing to Stackato
 
     make clean
     stackato push -n
